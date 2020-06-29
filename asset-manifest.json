@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Aquelehomem.github.io/teste-login-react/static/css/main.d43eb92a.chunk.css",
-    "main.js": "/Aquelehomem.github.io/teste-login-react/static/js/main.26339d6d.chunk.js",
-    "main.js.map": "/Aquelehomem.github.io/teste-login-react/static/js/main.26339d6d.chunk.js.map",
-    "runtime-main.js": "/Aquelehomem.github.io/teste-login-react/static/js/runtime-main.2066e044.js",
-    "runtime-main.js.map": "/Aquelehomem.github.io/teste-login-react/static/js/runtime-main.2066e044.js.map",
-    "static/js/2.a1da8d34.chunk.js": "/Aquelehomem.github.io/teste-login-react/static/js/2.a1da8d34.chunk.js",
-    "static/js/2.a1da8d34.chunk.js.map": "/Aquelehomem.github.io/teste-login-react/static/js/2.a1da8d34.chunk.js.map",
-    "index.html": "/Aquelehomem.github.io/teste-login-react/index.html",
-    "precache-manifest.7e77e48623f29d7eb64551ffc512f311.js": "/Aquelehomem.github.io/teste-login-react/precache-manifest.7e77e48623f29d7eb64551ffc512f311.js",
-    "service-worker.js": "/Aquelehomem.github.io/teste-login-react/service-worker.js",
-    "static/css/main.d43eb92a.chunk.css.map": "/Aquelehomem.github.io/teste-login-react/static/css/main.d43eb92a.chunk.css.map",
-    "static/js/2.a1da8d34.chunk.js.LICENSE.txt": "/Aquelehomem.github.io/teste-login-react/static/js/2.a1da8d34.chunk.js.LICENSE.txt"
+    "main.css": "/teste-login-react/static/css/main.d43eb92a.chunk.css",
+    "main.js": "/teste-login-react/static/js/main.fa13e20d.chunk.js",
+    "main.js.map": "/teste-login-react/static/js/main.fa13e20d.chunk.js.map",
+    "runtime-main.js": "/teste-login-react/static/js/runtime-main.13d70df7.js",
+    "runtime-main.js.map": "/teste-login-react/static/js/runtime-main.13d70df7.js.map",
+    "static/js/2.e570e9ba.chunk.js": "/teste-login-react/static/js/2.e570e9ba.chunk.js",
+    "static/js/2.e570e9ba.chunk.js.map": "/teste-login-react/static/js/2.e570e9ba.chunk.js.map",
+    "index.html": "/teste-login-react/index.html",
+    "precache-manifest.933b377c36f3831440e644cfd10d9b73.js": "/teste-login-react/precache-manifest.933b377c36f3831440e644cfd10d9b73.js",
+    "service-worker.js": "/teste-login-react/service-worker.js",
+    "static/css/main.d43eb92a.chunk.css.map": "/teste-login-react/static/css/main.d43eb92a.chunk.css.map",
+    "static/js/2.e570e9ba.chunk.js.LICENSE.txt": "/teste-login-react/static/js/2.e570e9ba.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2066e044.js",
-    "static/js/2.a1da8d34.chunk.js",
+    "static/js/runtime-main.13d70df7.js",
+    "static/js/2.e570e9ba.chunk.js",
     "static/css/main.d43eb92a.chunk.css",
-    "static/js/main.26339d6d.chunk.js"
+    "static/js/main.fa13e20d.chunk.js"
   ]
 }
