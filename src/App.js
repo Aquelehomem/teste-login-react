@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { styles } from "./styles/styles";
 import styled from "styled-components";
 import Login from "./components/Login";
@@ -13,19 +13,19 @@ const Div = styled.div`
 function App(state) {
 	return (
 		<Div className="App">
-			<Router basename={`${process.env.PUBLIC_URL}/`}>
+			<Router basename={`/`}>
 				<Switch>
-					<Router exact path="/">
+					<Route exact path="/">
 						<Login styles={styles} />
-					</Router>
-					<Router path="/dashboard">
+					</Route>
+					<Route path="/dashboard">
 						<DashBoard
 							usuarioAutenticado={state.usuarioAutenticado}
 						/>
-					</Router>
-					<Router path>
+					</Route>
+					<Route path>
 						<NoMatch />
-					</Router>
+					</Route>
 				</Switch>
 			</Router>
 		</Div>
