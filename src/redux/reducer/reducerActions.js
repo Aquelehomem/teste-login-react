@@ -33,14 +33,12 @@ export const fetchUserFailure = (value) => {
 export const fetchUser = (values) => {
 	return async (dispatch) => {
 		dispatch(fetchUserRequest("fetching data"));
-		let urlLogin = `//ec2-18-231-156-69.sa-east-1.compute.amazonaws.com/v1/users/token`;
+		let urlLogin = `https://api.suelycriacoes.com.br/v1/users/token`;
 		let res = await fetch(urlLogin, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json; charset=UTF-8",
 				Accept: "application/json",
-				"Content-Security-Policy-Report-Only":
-					"default-src https:; report-uri /csp-violation-report-endpoint/",
 			},
 			body: JSON.stringify(values),
 		})
