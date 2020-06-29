@@ -39,6 +39,8 @@ export const fetchUser = (values) => {
 			headers: {
 				"Content-Type": "application/json; charset=UTF-8",
 				Accept: "application/json",
+				"Content-Security-Policy-Report-Only":
+					"default-src https:; report-uri /csp-violation-report-endpoint/",
 			},
 			body: JSON.stringify(values),
 		})
