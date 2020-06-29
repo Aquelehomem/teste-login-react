@@ -13,7 +13,7 @@ const Div = styled.div`
 function App(state) {
 	return (
 		<Div className="App">
-			<Router basename={`/`}>
+			<Router basename={process.env.PUBLIC_URL}>
 				<Switch>
 					<Route exact path="/">
 						<Login styles={styles} />
@@ -22,9 +22,6 @@ function App(state) {
 						<DashBoard
 							usuarioAutenticado={state.usuarioAutenticado}
 						/>
-					</Route>
-					<Route path>
-						<NoMatch />
 					</Route>
 				</Switch>
 			</Router>
