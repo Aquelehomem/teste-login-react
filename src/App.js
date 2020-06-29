@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
+import { styles } from "./styles/styles";
+import styled from "styled-components";
+import Login from "./components/Login";
+import DashBoard from "./components/DashBoard";
+import NoMatch from "./components/NoMatch";
+import { connect } from "react-redux";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const Div = styled.div`
+	position: relative;
+`;
+function App(state) {
+	return (
+		<Div className="App">
+			<Router>
+				<Switch>
+					<Router exact path="/login">
+						<Login styles={styles} />
+					</Router>
+					<Router path="/dashboard">
+						<DashBoard
+							usuarioAutenticado={state.usuarioAutenticado}
+						/>
+					</Router>
+					<Router path>
+						<NoMatch />
+					</Router>
+				</Switch>
+			</Router>
+		</Div>
+	);
 }
-
-export default App;
+const mapStateToProps = (state) => {
+	return {
+		usuarioAutenticado: state.usuarioAutenticado,
+	};
+};
+export default connect(mapStateToProps)(App);
