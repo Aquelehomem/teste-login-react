@@ -23,9 +23,6 @@ function App(state) {
 							usuarioAutenticado={state.usuarioAutenticado}
 						/>
 					</Router>
-					<Router path>
-						<NoMatch />
-					</Router>
 				</Switch>
 			</Router>
 		</Div>
