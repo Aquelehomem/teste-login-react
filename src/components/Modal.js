@@ -4,35 +4,36 @@ import styled from "styled-components";
 import { hideModalFn } from "../redux/reducer/reducerActions";
 import { useHistory } from "react-router-dom";
 const Div = styled.div`
-	width: 501px;
-	height: 230px;
-	transition: all 0.5s;
-	background-color: white;
+	width: 500px;
+	height: 212px;
+	transition: opacity 0.5s;
+	background-color: #ffffff;
 	z-index: ${(props) => (props.hideModal ? "-1" : "5")};
 	opacity: ${(props) => (props.hideModal ? "0" : "1")};
 	margin: 0 auto;
-	border: 1px;
-	//border: 1px solid gray;
-	border-radius: 3px;
-	box-shadow: 0px 0px 13px -2px rgba(0, 0, 0, 0.5);
+	border: 1px solid #dadadb;
+	border-radius: 2px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-family: "Lato";
 	div.title {
-		color: ${(props) => props.styles.blackHexCode};
-		font-weight: 800;
-		font-size: ${(props) => props.styles.h1}px;
+		color: #263046;
+		font-weight: 700;
+		font-size: 18px;
 		padding: 28px 26px;
-		border-bottom: 1px solid #ccd5ea;
+		border-bottom: 1px solid #dadadb;
 	}
 	div.text {
 		padding: 16px 26px;
-		border-bottom: 0.5px solid #ccd5ea;
-		font-size: ${(props) => props.styles.h5}px;
-		font-weight: 500;
-		color: #69707f;
+		border-bottom: 0.5px solid #dadadb;
+		font-size: 14px;
+		font-weight: 400;
+		p {
+			width: 441px;
+			color: #263046;
+		}
 	}
 	div.buttonContainer {
 		border-radius: 3px;
@@ -50,18 +51,18 @@ const Div = styled.div`
 				align-self: center;
 				background: none;
 				border: none;
+				font-size: 12px;
 				border-radius: 5px;
-				color: #ccd5ea;
-				font-weight: 400;
+				color: #a6acb1;
+				font-weight: 300;
 				cursor: pointer;
 			}
 			input:nth-of-type(2) {
-				background-color: ${(props) => props.styles.Hex};
-				color: white;
+				background-color: #3455ab;
+				color: #ffffff;
 				font-weight: 700;
-				:hover {
-					background: ${(props) => props.styles.blackHexCode};
-				}
+				width: 110px;
+				height: 100%;
 			}
 		}
 	}
