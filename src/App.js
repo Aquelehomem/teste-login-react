@@ -1,10 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import { styles } from "./styles/styles";
 import styled from "styled-components";
 import Login from "./components/Login";
 import DashBoard from "./components/DashBoard";
-import NoMatch from "./components/NoMatch";
 import { connect } from "react-redux";
 
 const Div = styled.div`
@@ -13,7 +12,7 @@ const Div = styled.div`
 function App(state) {
 	return (
 		<Div className="App">
-			<Router basename={process.env.PUBLIC_URL}>
+			<HashRouter basename="/">
 				<Switch>
 					<Route exact path="/">
 						<Login styles={styles} />
@@ -24,7 +23,7 @@ function App(state) {
 						/>
 					</Route>
 				</Switch>
-			</Router>
+			</HashRouter>
 		</Div>
 	);
 }
