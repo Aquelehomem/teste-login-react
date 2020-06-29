@@ -15,7 +15,7 @@ function App(state) {
 		<Div className="App">
 			<Router>
 				<Switch>
-					<Router exact path="/login">
+					<Router exact path="/">
 						<Login styles={styles} />
 					</Router>
 					<Router path="/dashboard">
